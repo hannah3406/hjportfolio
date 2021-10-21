@@ -1,0 +1,338 @@
+$num : (1250px,1400px, 1550px, 1660px, 1860px);
+
+@mixin media($width){
+    @media(max-width:$width){
+        @content;
+    }
+}
+
+@include media(nth($num,5)){
+    .App{
+        #all-project{
+            >ul{
+                padding-top:175px;
+            }
+            >span{top:175px;}
+            .all-project-img{top:325px;}
+            .all-project-opt{transform:scale(0.9);}
+        }
+        main{
+            margin-top:300px;
+            .About{
+                .sub1-text{padding-bottom:150px;}
+                .sub1-info{
+                    margin-top:150px; padding-bottom:200px;
+                    .info{.skill-all{
+                        .skill-tit{.skill{>figure{height:46px;}}}}
+                        .skill-content{height:190px;}
+                    }
+                }
+                .sub1-text{
+                    transition-delay: 2s;
+                    >div{
+                        >p.active{
+                            transition-delay:1.5s;
+                            >strong{animation:colortxt 2s; animation-delay: 2s; transition:1s;}
+                        }
+                        &:nth-of-type(1){
+                            >p.active{
+                                transition-delay: 1s;
+                            }
+                        }
+                        &:nth-of-type(2){
+                            >p.active{
+                                transition-delay: 1.2s;
+                            }
+                        }
+                        &:nth-of-type(3){
+                            >p.active{
+                                transition-delay: 1.4s;
+                            }
+                        }
+                        &:nth-of-type(4){
+                            >p.active{
+                                transition-delay: 1.6s;
+                            }
+                        }
+                    }
+                }
+                .info-myimg{width:18%;height:2000px; >figure{transform:scale(0.85);transform-origin:top left;}}
+            }
+            .Work{
+                padding-bottom:480px;
+                .por.active{
+                    .text-left{
+                        >span{
+                            transition-delay: .8s;
+                        }
+                    }
+                }
+                .tfo.active{
+                    .text-left{
+                        >span{
+                            transition-delay: 1s;
+                        }
+                    }
+                }
+                .lio.active{
+                    .text-left{
+                        >span{
+                            transition-delay: 1.2s;
+                        }
+                    }
+                }
+                .work-img.show{
+                    .work-inner{
+                        >li{top:0; transition-delay:2s;transition: opacity .5s ease-in-out, top 2s; }
+                    }
+                }
+                .work-img1{
+                    left:6.1%; transform:scale(0.9);  
+                }
+                .popup-box{
+                    .detail-popup{
+                        .popup-content{
+                            .icon{
+                                @include flex; width:5%;
+                                @include fixed(33px,78.7%);
+                                transform:scale(0.9);
+                                >li{cursor: pointer;padding:0 10px;}
+                            } 
+                            
+                        }
+                    }
+                }
+            }
+            .Contact{
+                .get.active{
+                    .text-left{
+                        >span{
+                            transition-delay: .8s;
+                        }
+                    }
+                }
+                .in.active{
+                    .text-left{
+                        >span{
+                            transition-delay: 1s;
+                        }
+                    }
+                }
+                .tou.active{
+                    .text-left{
+                        >span{
+                            transition-delay: 1.2s;
+                        }
+                    }
+                }
+                .ch.active{
+                    .text-left{
+                        >span{
+                            transition-delay: 1.4s;
+                        }
+                    }
+                }
+                .sns-all{
+                    >li{
+                        >img{transform:scale(0.8);}
+                    }
+                }
+            }
+        }
+    }
+    @keyframes load{
+        0%{top:48%; opacity:0;}
+        30%{top:48%; opacity:0.5;}
+        100%{top:40%; opacity:1;}
+    }
+};
+
+@include media(nth($num,4)){
+    .App{
+        #all-project{
+            >ul{
+                padding-top:165px;
+            }
+            >span{top:175px;}
+            .all-project-img{top:310px;transform:scale(0.9);}
+            .all-project-opt{transform:scale(0.9);}
+        }
+        main{
+            .About{
+                .sub1-text{padding-bottom:150px;}
+                .sub1-info{
+                    margin-top:150px; padding-bottom:180px;
+                    .info{.skill-all{
+                        .skill-tit{.skill{>figure{height:43px;}}}}
+                        .skill-content{height:170px;}
+                    }
+                }
+                .info-myimg{width:18%;height:2000px; >figure{transform:scale(0.75);transform-origin:top left;}}
+            }
+            .Work{
+                padding-bottom:440px;
+                .work-img1{
+                    left:6.1%; transform:scale(0.84);  
+                }
+                .popup-box{
+                    .detail-popup{
+                        .popup-content{
+                            .icon{
+                                @include flex; width:5%;
+                                @include fixed(30px,78%);
+                                transform:scale(0.85);
+                                >li{cursor: pointer;padding:0 10px;}
+                            } 
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @keyframes load{
+        0%{top:50%; opacity:0;}
+        30%{top:50%; opacity:0.5;}
+        100%{top:43%; opacity:1;}
+    }
+};
+
+@include media(nth($num,3)){
+    .App{
+        #all-project{
+            >ul{
+                padding-top:185px; margin-left:53%;
+                >li{padding:15px 0;}
+            }
+            >span{top:145px;}
+            .all-project-img{top:250px;transform:scale(0.8);}
+            .all-project-opt{transform:scale(0.8);top:-150px; width:8%;}
+        }
+        main{
+            .About{
+                .sub1-text{padding-bottom:150px;}
+                .sub1-info{
+                    margin-top:150px; padding-bottom:180px;
+                    .info{.skill-all{
+                        .skill-tit{.skill{>figure{height:43px;}}}}
+                        .skill-content{height:140px;}
+                    }
+                }
+                .info-myimg{width:18%;height:2000px; >figure{transform:scale(0.7);transform-origin:top left;}}
+            }
+            .Work{
+                padding-bottom:440px;
+                .work-img1{
+                    left:6.1%; transform:scale(0.7);  
+                }
+                .popup-box{
+                    .detail-popup{
+                        .popup-content{
+                            .popup-tit{width:21%;}
+                            .icon{
+                                @include flex; width:5%;
+                                @include fixed(20px,78%);
+                                transform:scale(0.75);
+                                >li{cursor: pointer;padding:0 10px;}
+                            } 
+                            border-width:3px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @keyframes load{
+        0%{top:48%; opacity:0;}
+        30%{top:48%; opacity:0.5;}
+        100%{top:41%; opacity:1;}
+    }
+};
+
+@include media(nth($num,2)){
+    .App{
+        #all-project{
+            >ul{
+                padding-top:175px; margin-left:53%;
+                >li{padding:15px 0;}
+            }
+            >span{top:135px;}
+            .all-project-img{top:250px;transform:scale(0.7);}
+            .all-project-opt{transform:scale(0.7);top:-100px; width:9.5%;}
+        }
+        main{
+            .About{
+                .sub1-text{padding-bottom:150px;}
+                .sub1-info{
+                    margin-top:150px; padding-bottom:180px;
+                    .info{.skill-all{
+                        .skill-tit{.skill{>figure{height:38px;}}}
+                        .skill-content{height:160px;}
+                        }
+                    }
+                    .info2{
+                        .strenth{
+                            .str-detail{
+                                >figure{width:15%;}
+                            }
+                        }
+                    }
+                }
+                .info-myimg{width:18%;height:2000px; >figure{transform:scale(0.6);transform-origin:top left;}}
+            }
+            .Work{
+                padding-bottom:440px;
+                .work-img1{
+                    left:6.1%; transform:scale(0.65);  
+                }
+                .work-list{
+                    margin-left:44%;
+                    margin-top:184px;
+                    padding-bottom:450px;
+                }
+                .work-img2{bottom:44%;left:43.3%; width:35.5%;transform:scale(0.99)}
+                .work-img3{top:40%;left:79%;transform:scale(0.94)}
+                .popup-box{
+                    .detail-popup{
+                        .popup-content{
+                            .icon{
+                                @include flex; width:5%;
+                                @include fixed(20px,78%);
+                                transform:scale(0.6);
+                                >li{cursor: pointer;padding:0 10px;}
+                            } 
+                            .popup-tit{top:20px;}
+                            .popup-page{
+                                width:68%;
+                                .popup-txt-all{
+                                    width:85%;
+                                    >ul{
+                                        .popup-a{
+                                            a{padding:15px 20px; }
+                                        }
+                                    }
+                                }
+                            }
+                            border-width:5px !important;
+                        }
+                    }
+                }
+            }
+            .Contact{
+                .sns-all{
+                    >li{
+                        width:60%;
+                        margin:15px auto;
+                        margin-right:35%;
+                        @include flex;
+                        >img{transform:scale(0.6);}
+                    }
+                }
+            }
+        }
+    }
+    @keyframes load{
+        0%{top:50%; opacity:0;}
+        30%{top:50%; opacity:0.5;}
+        100%{top:43%; opacity:1;}
+    }
+};

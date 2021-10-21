@@ -1,0 +1,42 @@
+@mixin flex($j:space-between,$k:flex,$a:center){
+    display:$k;
+    justify-content: $j;
+    align-items:$a
+}
+
+@mixin fixed($t,$l){
+    position:fixed;
+    top:$t;
+    left:$l;
+}
+
+@mixin grid1(){
+    width:26%;
+    margin-left:0;
+    text-align:left;
+}
+
+@mixin grid2(){
+    width:17%;
+    margin-left:26%;
+    text-align:left;
+}
+
+@mixin grid3(){
+    width:36%;
+    margin-left:43%;
+    text-align:left;
+}
+
+@mixin grid4(){
+    width:21%;
+    margin-left:79%;
+    text-align:left;
+}
+
+
+@mixin txtStyle(){
+    font-family: 'NEXON Lv1 Gothic OTF';
+    font-size:1.2rem;
+    color:#000;
+}

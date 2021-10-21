@@ -1,0 +1,32 @@
+$num : (1250px,1400px, 1550px, 1660px, 1860px);
+
+@mixin media($width){
+    @media(max-width:$width){
+        @content;
+    }
+}
+
+@include media(nth($num,5)){
+ *{font-size:16px;}
+    .subtit{padding-bottom:30px;}
+};
+
+@include media(nth($num,4)){
+    *{font-size:15px;}
+    .subtit{padding-bottom:30px;}
+};
+
+@include media(nth($num,3)){
+    *{font-size:13.5px;}
+    .subtit{padding-bottom:30px;}
+};
+
+@include media(nth($num,2)){
+    *{font-size:12.2px;}
+    .subtit{padding-bottom:30px;}
+};
+
+@include media(nth($num,1)){
+    *{font-size:11.5px;}
+    .subtit{padding-bottom:30px;}
+};

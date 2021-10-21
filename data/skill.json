@@ -1,0 +1,62 @@
+[
+    {
+        "className" : "skill1",
+        "tit": "HTML",
+        "src1": "./img/skill1.png",
+        "src2": "./img/skill1(b).png",
+        "content1":"- 웹 페이지 구성과 기능 구현 가능 ",
+        "content2":"- input 태그를 이용한 유효성 검사를 구현 가능",
+        "content3":"- 웹표준 및 웹 접근성을 이해하며 이에 따른 작업 가능",
+        "content4":"- 시멘틱 태그와 폼 요소 사용 가능"
+    },
+    {
+        "className" : "skill2",
+        "tit": "CSS3/SCSS",
+        "src1": "./img/skill2.png",
+        "src2": "./img/skill2(b).png",
+        "content1":"- 미디어쿼리 개념을 이해하며 반응형 작업 가능 ",
+        "content2":"- DOM,애니메이션 등 작업 가능",
+        "content3":"- minxin, common 등 함수 적용,사용",
+        "content4":"- scss/css요소를 이해하고, 자유로운 적용 가능"
+    },
+    {
+        "className" : "skill3",
+        "tit": "JAVASCRIPT",
+        "src1": "./img/skill3.png",
+        "src2": "./img/skill3(b).png",
+        "content1":"- 조건문, 반복문 사용 가능",
+        "content2":"- api를 이용하여 지도, 주소 검색 가능",
+        "content3":"- 데이터 처리 가능한 json 사용 가능",
+        "content4":"- 스크롤을 이용한 이벤트 제어와 슬라이드 화면 구현 가능"
+    },
+    {
+        "className" : "skill4",
+        "tit": "JQUERY",
+        "src1": "./img/skill4.png",
+        "src2": "./img/skill4(b).png",
+        "content1":"- 조건문, 반복문 등 jquery문법 활용 가능",
+        "content2":"- 데이터 처리 가능한 json 사용 가능",
+        "content3":"- 스크롤을 이용한 이벤트 제어와 슬라이드 화면 구현 가능",
+        "content4":""
+    },
+    {
+        "className" : "skill5",
+        "tit": "PHP",
+        "src1": "./img/skill5.png",
+        "src2": "./img/skill5(b).png",
+        "content1":"- php 개발환경 이해",
+        "content2":"- mysql 활용 가능",
+        "content3":"-그누보드 활용 가능",
+        "content4":"- php파일 암호화, data 변경, 수정 삭제, 업데이트 활용 가능"
+    },
+    {
+        "className" : "skill6",
+        "tit": "REACT JS",
+        "src1": "./img/skill6.png",
+        "src2": "./img/skill6(b).png",
+        "content1":"- React 개발환경 이해",
+        "content2":"- Component 제작 가능",
+        "content3":"- state, effect 활용 가능",
+        "content4":"- npm 활용 가능"
+    }
+]

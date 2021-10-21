@@ -1,0 +1,34 @@
+[
+    {
+        "num":"1.",
+        "tit": "한화해양생물연구센터",
+        "src1": "./img/hmbrc11.png",
+        "src2": "./img/hmbrc22.png",
+        "src3": "./img/hmbrc33.png",
+        "src":"./img/hmbrc22.png"
+    },
+    {
+        "num":"2.",
+        "tit": "홍루이젠",
+        "src1": "./img/hong11.png",
+        "src2": "./img/hong22.png",
+        "src3": "./img/hong33.png",
+        "src":"./img/hong22.png"
+    },
+    {
+        "num":"3.",
+        "tit": "교보북 story",
+        "src1": "./img/kyobo11.png",
+        "src2": "./img/kyobo22.png",
+        "src3": "./img/kyobo33.png",
+        "src":"./img/kyobo22.png"
+    },
+    {
+        "num":"4.",
+        "tit": "mbti",
+        "src1": "./img/mbti1.png",
+        "src2": "./img/mbti2.png",
+        "src3": "./img/mbti3.png",
+        "src":"./img/mbti2.png"
+    }
+]

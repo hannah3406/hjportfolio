@@ -1,0 +1,104 @@
+@charset "utf-8";
+@import "_mixin";
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'CWDangamAsac-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/CWDangamAsac-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: '양진체';
+    src: url('https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Wemakeprice-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Wemakeprice-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KoPubDotumMedium';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/KoPubDotumMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GowunBatang-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GyeonggiBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EliceDigitalBaeum_Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html,body{
+    margin:0;padding:0;
+    background-color:black;
+    height:0 !important;
+    // overflow-y: hidden;
+}
+body::-webkit-scrollbar{display:none;}
+ul,li,ol{list-style:none;margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6,figure,p{margin:0;}
+img{vertical-align:top;}
+a{text-decoration:none; cursor:pointer;}
+$w:100%;
+*{
+    font-family: 'Wemakeprice-SemiBold';
+    font-size: 18px;
+    color: #fff;
+    word-break: keep-all;
+    box-sizing: border-box;
+    outline: none;
+    margin:0; padding:0;
+    text-transform: uppercase;
+}
+html{scroll-behavior: smooth;}
+.eng{font-family: 'Montserrat', sans-serif;}
+
+.strong{
+    font-size:3.8rem; font-weight:300;
+    display: inline;
+    color: #000;
+    transition: color 600ms cubic-bezier(0.115, 0.905, 0.32, 1);
+    text-shadow: -1px -1px 0 #998150, 1px -1px 0 #998150, -1px 1px 0 #998150, 1px 1px 0 #998150;
+    &:hover{
+        color: #998150;
+        text-decoration: none;
+        transition:1s;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+}
+.subtit{padding-bottom:50px;}
+.big-tit >.text-left>.eng{font-family:'SBAggroB'; font-size:14.2rem; line-height:0.9;}
+.big-tit > .text-left{z-index:-99;}
+.txt-right{text-align:right;}
+
+@import "_mediaCommon";
